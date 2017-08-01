@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>react redux</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script type="text/javascript">
+    // 给window.Response 添加ok 属性 ，为了兼容Android QQ browser
+    if (window.Response && (new window.Response(new Blob())).ok === undefined) {
+      Object.defineProperty(window.Response.prototype, 'ok', {
+          get: function() {
+            return this.status >= 200 && this.status < 300
+          },
+          set: function(){}
+        }
+      )
+    }
+  </script>
+</head>
+<body>
+  <div id="root" style="height: 100%"></div>
+  <script>
+    function rem () {
+      var deviceWidth = document.documentElement.clientWidth;
+      if(deviceWidth > 640) deviceWidth = 640;
+      document.documentElement.style.fontSize = deviceWidth / 3.75 + 'px';
+    }
+    rem();
+    window.onresize = function(){ rem(); }
+  </script>
+</body>
+</html>

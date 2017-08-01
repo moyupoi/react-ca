@@ -1,0 +1,50 @@
+.notFundContain {
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
+  .notFoundImg {
+    display: block;
+    width: 2.78rem;
+    height: 2.78rem;
+    margin: 0.49rem 0.49rem 0.19rem 0.49rem;
+  }
+
+  .notFoundExplain {
+    font-size: 0.2rem;
+    line-height: 1;
+    text-indent: .1rem;
+  }
+
+  .notFoundGoBack, .notFoundHome {
+    display: block;
+    width: 2.34rem;
+    height: 0.4rem;
+    font-size: .17rem;
+    font-weight: 200;
+    line-height: .4rem;
+    margin: 0.20rem auto;
+    background: #3A3A48;
+    border-radius: 0.18rem;
+    color: #fff;
+  }
+
+  .notFoundHome {
+    background: #fff;
+    border: 1px solid #3A3A48;
+    color: #3A3A48;
+  }
+  .statusCode {
+    color: #fff;
+    display: block;
+    font-size: .4rem;
+    font-style: normal;
+    line-height: 1.1;
+    text-align: center;
+    position: absolute;
+    top: 2.65rem;
+    left: 0;
+    right: 0;
+  }
+}

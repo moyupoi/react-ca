@@ -1,0 +1,25 @@
+:global {
+  @import 'base';
+  @import 'layout';
+  @import 'home';
+  @import 'sign';
+  @import 'offers';
+  @import 'datepicker';
+  @import 'counter';
+  @import 'selectCategoryName';
+  @import 'booking';
+  @import 'tenantstory';
+  @import 'search';
+  @import 'events_coupons';
+  @import 'trip_payments';
+  @import 'share';
+  @import '~normalize.css/normalize';
+
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  // html {
+  //   box-sizing: border-box;
+  // }
+  //
+}

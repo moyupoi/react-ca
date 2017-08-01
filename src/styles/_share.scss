@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@function getRem($pixel) {
+  @return $pixel/200*1rem;
+}
+
+.shareMain {
+  .ant-form-item {
+    margin-bottom: getRem(20);
+  }
+  .ant-btn {
+    width: getRem(550);
+    height: getRem(84);
+    background-color: #3A3A48;
+    border: 0;
+    span {
+      font-size: getRem(30);
+      font-weight: 300;
+    }
+  }
+}

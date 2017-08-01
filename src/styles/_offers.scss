@@ -1,0 +1,235 @@
+/* public */
+button {
+   -webkit-appearance: none;
+   border: 0;
+   background: none;
+ }
+/* 房屋详情 */
+ .housing-popups {
+  margin: .4rem auto;
+  border-radius: .03rem;
+  .ant-modal {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    top: 0;
+  }
+  .ant-modal-content {
+    height: 100%;
+    border-radius: 0;
+    width: 3.3rem;
+    margin: 0 auto;
+  }
+  .ant-modal-body {
+    height: 100%;
+    overflow-y: auto;
+    font-size: .14rem;
+    h3 {
+      font-size: .2rem;
+      padding-bottom: .1rem;
+      text-align: center;
+    }
+    dl {
+      overflow: hidden;
+      margin-top: .20rem;
+      dt {
+        border-left: 1px solid #28A4B0;
+  			color: #3a3a48;
+  			font-size: .16rem;
+  			font-weight: 400;
+  			padding-left: .04rem;
+  			height: .16rem;
+  			line-height: .16rem;
+      }
+      dd {
+        margin-right: .12rem;
+        float: left;
+        margin-top: .10rem;
+      }
+      .not-have {
+        color: #C0C0C8;
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-close {
+    width: .5rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    border-radius: 50%;
+    border: 1px solid #D9D9DE;
+    background: #fff;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -.25rem;
+  }
+  .ant-modal-close-x {
+    width: 100%;
+    height: auto;
+  }
+  .showPre {
+    height: 1000px;
+  }
+}
+.imgwrap-dots {
+  position: absolute;
+  display: inline-block;
+  bottom: .15rem;
+  right: .35rem;
+  padding: 0 .05rem;
+  li {
+    display: none;
+    color: #fff;
+  }
+  .slick-active {
+    display: block;
+  }
+}
+/* 在线咨询 */
+.photonumber-popups {
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal {
+    width: 100%;
+    padding-bottom: 0;
+    position: fixed;
+    bottom: 10%;
+    left: .1rem;
+    top: auto;;
+  }
+  .customer-service {
+    .customer-box {
+      overflow: hidden;
+      h6 {
+        float: left;
+        margin-right: .45rem;
+      }
+      p {
+        float:left;
+        margin-right: .15rem;
+        span {
+          display: block;
+          line-height: .3rem;
+        }
+      }
+      .call-photo {
+        float: left;
+        height: .68rem;
+        line-height: .90rem;
+        margin-left: .2rem;
+        color: #28A4B0;
+        background: url(../routes/Offer/assets/iconsPhotoCall.png) no-repeat;
+        background-size: .175rem .18rem;
+        background-position: 50% 30%;
+      }
+    }
+    .customer-number {
+      font-size: .12rem;
+      font-weight: 100;
+      padding-bottom: .1rem;
+      border-bottom: 1px solid #E6E6E9;
+      h6 {
+        height: .68rem;
+        line-height: .6rem;
+      }
+      .tel-number {
+        font-size: .2rem;
+        font-weight: 400;
+      }
+    }
+    .customer-online {
+      margin-top: .1rem;
+      .jump-other-app {
+        display: block;
+        float: left;
+        .anticon-right {
+          color: #28A4B0;
+          margin-left: .25rem
+        }
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-content  {
+      position: relative;
+  }
+  .ant-modal-content:after  {
+      content: "";
+      position: absolute;
+      left: .15rem;
+      border-width: .1rem .1rem 0;
+      border-style: solid;
+      border-color: #fff transparent;
+      display: block;
+      width: 0;
+  }
+}
+.consult-now {
+  display: block;
+  width: .5rem;
+  height: .44rem;
+  border: 1px solid #fff;
+  border-top:none;
+  border-right: 2px solid #fff;
+  box-sizing: border-box;
+  color: #666;
+  float: left;
+  font-size: .12rem;
+  line-height: 1;
+  text-align: center;
+
+  .anticon-phone {
+    height: .18rem;
+    font-size: .18rem;
+    display: block;
+    margin: .03rem 0 .04rem;
+  }
+}
+.consult-now:hover {
+  color: #666;
+}
+
+
+/***收藏公用样式***/
+
+.collect-btn {
+  width: .25rem;
+  height: .23rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAAuCAMAAADnevBGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADDUExURQgIGv///56epv///////////////0xpcf////z8/CkpOf////zy8////////////////////9/f4XR0fv79/f///////////////xISJMjIzf///xYWKGJibf///////////0xMWaursZSUnL6+w+np60NDUYmJkf///////////////////9fX2vni5e/e4dACG////9EJIud9ifXJztgsQdtAU+RvffCuttUbMuBXaNMSKumGk+uWoN5OYO6krfjZ3diaXGsAAAAwdFJOU5kpyhLlCN0A/POiSP5BcsSyU+q6+XtcatSc3yOdszmQiazQxtnxqcHKo6TMHOb+9wkSvREAAAOhSURBVFjD7ZhZd6JKFEZPCFoUErWRpB1jjJpOuju9/ABxyvT/f9UtMCoyGKrUu/qhv8fjYu1tFTUciK1zW8M2+t3lunh5p++qtVt2gkhwaP1bHeCjxsDsPvS0sXioElYr4oGx1nvomoPGiAP1y2PFQo71vpyu3GngfcQ5H14wdVfT5bu15URqF2VwrUubDJ6BPmN94HmwLXY1jvLFcWaCY3nuZJPA33D8YFt0PeuTE6pdcNgmxTPkuLsDH+4VTRv8KDfB8ReTeGZWyLFme8WFv+YItcsy2i3aT88BnF6i2GqjfMScCs7cnewnCDlBoujOI45Qq8NOmhE1DKORKrZs1NXV6vCTZpPJ0jCWqaLrhxxiV+AmpaNpGUWT40rV7ArWYpKO52UUF5bgEKshSyInGmqqajVkSeTEExzqgHeLq3U5OmpmHVhucTXXQoeqGJFERqiqqVXxPpHIO6pUR0NGraG6EOpYyqgtUacmHmTUBmiqqTUxlVGbokkcpoyaCa6mxrGSUVuBk4OWjFoLjpqaA1dGzYVDuuyo6WpqOhYyagvo9IiejFoPj2pqjwhk1AI8Ul9mxw333L6aWl9mxw333D5VYMuo2aioqVXgy6j5qFBJl5nRHvSSmprgBDLzqZeIXcsMm41r1TP0WmbYfMEhVioXf9s0lEuqaoLjFX/TBIfC24pR8KxqGOp3oojzVszsLeJQNNR8UOiQ4urTuZ5Sq9BhNbUiTtS2PGFcYN81x3g6rm15wp8C++7iz5oTqZVqsL+8tHVt1ErHqQmO/+VxJW7faw5tOor2V2rH9Sy7zuUrtfmGQ9s+7P6w2f2Rnd6W83rY7HXLoc3ycQ673cO5YieI4LwcMnvZcTZq7JtxaHvTYHxjJ4ngeIc2tB2H4s8M88yGJzOLOLM8s1mcs1NjN8CPbLMfwA07WQRnlmcW58TU2PccN2H2nZ0wgrPMMYtzaL8hy5rTIVQbvPzGL2vcZgkOJf/PfXptnnbMPjkv6bWZ4FDiPTCSHfMIxg07eQTnNbmfJTmUvIw6e1+0Wm04FXaGCE78i5Y7T3Mo9bGV43l71pvP4LfsLBEcf9uZrvwMDqXPEh3jz4b+YQz9gp0pgvPxeUeafmRx0mrs9y/w6G7Z4Pj1m50tgmNFd8s3K5NDWXeXnwgPLQ34WWJnTMjxwsMpm0PZG4+BdhtGlZ05gjOf53EoZwFxgFfY2XOIQ3kfEZvNDvsfcoBD7K/NPzWV/AcM0a2ehkxtEgAAAABJRU5ErkJggg==) 50% no-repeat;
+  background-size: .77rem .23rem;
+  color: #3A3A48;
+  font-size: .12rem;
+  line-height: 1;
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+  text-align: center;
+  z-index: 2;
+}
+.collect-not{
+  background-position: 0 0;
+}
+.collect-already {
+  background-position: -.52rem 0;
+}
+
+/* 房源详情页收藏 */
+
+.offer-like-bottom{
+  width: .5rem;
+  float: left;
+  overflow: hidden;
+  .collect-not{
+    background-position: .12rem .03rem;
+  }
+  .collect-already {
+    background-position: -.40rem .03rem;
+  }
+}

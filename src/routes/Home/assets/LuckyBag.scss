@@ -1,0 +1,28 @@
+@function getRem($pixel) {
+  @return $pixel/200*1rem;
+}
+@function getRemFour($top, $right, $bottom, $left) {
+  @return $top/200*1rem $right/200*1rem $bottom/200*1rem $left/200*1rem;
+}
+// 首页弹出框
+.modalWindow {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 3.75rem;
+  height: 100%;
+  background: rgba(9,9,26,0.5);
+  .modalContent {
+    width: getRem(540);
+    height: getRem(660);
+    margin: getRem(150) auto 0 auto;
+    border-radius: 6px;
+    display: block;
+  }
+  .closeBtn {
+    display: block;
+    margin: getRem(44) auto 0 auto;
+    width: getRem(80);
+    height: getRem(80);
+  }
+}

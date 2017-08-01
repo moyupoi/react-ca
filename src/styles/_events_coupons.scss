@@ -1,0 +1,36 @@
+@function getRem($pixel) {
+  @return $pixel/200*1rem;
+}
+@function getRemFour($top, $right, $bottom, $left) {
+  @return $top/200*1rem $right/200*1rem $bottom/200*1rem $left/200*1rem;
+}
+.couponsDynamicLogin {
+  .ant-form-item {
+    margin-bottom: getRem(20);
+  }
+  .ant-input-lg {
+    margin-top: 0;
+  }
+  .ant-form-horizontal {
+    height: getRem(110);
+  }
+  .ant-form-item {
+    height: getRem(110);
+  }
+  .ant-form-item-control {
+    height: getRem(24);
+    line-height: getRem(24);
+  }
+  .ant-btn-lg {
+    padding: 0;
+  }
+  .ant-input:focus {
+    box-shadow: none;
+  }
+  input:focus {
+    box-shadow: none;
+  }
+  .ant-checkbox-wrapper span:nth-child(2) {
+    margin-right: getRem(6);
+  }
+}

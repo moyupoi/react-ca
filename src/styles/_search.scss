@@ -1,0 +1,74 @@
+.headerSelect {
+  position: relative;
+  z-index: 3;
+  width: 2.65rem;
+  margin: 0 auto;
+  .arrowTop {
+    width: .2428rem;
+    height: .10905rem;
+    display: block;
+    margin: -.10905rem auto 0 auto;
+  }
+  .title {
+    font-size: .17rem;
+    color: #F8F8F9;
+    .titleContain{
+      margin-left: .09rem;
+    }
+  }
+  .triangle {
+    width: 0.19rem;
+    height: .1rem;
+    margin-left: .07rem;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+  }
+  .triangleRotate {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  &:before {
+    border-top: 18px solid transparent;
+  }
+  .ulHide {
+    width: 2.65rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: .05rem;
+    display: none;
+    li {
+      margin-left: .15rem;
+      text-align: left;
+      color: #6B6B76;
+      font-size: .15rem;
+      height: .44rem;
+      line-height: .44rem;
+      border-bottom: .005rem solid #E6E6E9;
+      .check {
+        width: .15rem;
+        height: .155rem;
+        line-height: .5rem;
+        margin-left: 1.56rem;
+      }
+    }
+    li:last-child {
+      border-bottom: 0;
+      margin-bottom: .03rem;
+    }
+  }
+  .ulShow {
+    display: block;;
+  }
+  .ulPart {
+    height: 3.52rem;
+    overflow: auto;
+  }
+
+  a{
+    color: #6B6B76;
+    display: block;
+  }
+  a:hover{
+    color: #6B6B76;
+  }
+}

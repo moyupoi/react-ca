@@ -1,0 +1,193 @@
+
+.signMain {
+  .ant-tabs {
+  }
+  //Tab导航
+  .ant-tabs-bar {
+    border: none;
+    margin-bottom: 0;
+  }
+  form {
+    position: relative;
+  }
+  .ant-tabs-nav {
+    margin: .24rem 0 .24rem .47rem;
+    .ant-tabs-tab {
+      margin: 0;
+      width: 1.4rem;
+      height: .32rem;
+      border: 1px solid #9D9DA3;
+      box-sizing: border-box;
+      line-height: .32rem;
+      overflow: hidden;
+      padding: 0;
+      text-align: center;
+    }
+    .ant-tabs-tab-active {
+      background: #28A4B0;
+      border: 1px solid #28a4b0;
+      color: #fff;
+    }
+    .ant-tabs-ink-bar {
+      display: none !important;
+    }
+  }
+  //圆角
+  .ant-tabs-tab:nth-child(2) {
+    border-right: none;
+    border-radius: .16rem 0 0 .16rem;
+  }
+  .ant-tabs-tab:nth-child(3) {
+    border-left: none;
+    border-radius: 0 .16rem .16rem 0;
+  }
+  //按钮
+  .login, .register {
+    transition: none !important;
+  }
+  .ant-btn-primary:focus, .ant-btn-primary:hover {
+    background: #3a3a48;
+  }
+  .ant-btn-primary {
+    span {
+      font-size: .17rem;
+    }
+  }
+
+  //表单
+  .has-error input {
+    border-color: #ff1744;
+    box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+  }
+  .has-error .ant-form-explain, .has-error .ant-form-split {
+    color: #ff1744;
+    font-size: .12rem;
+  }
+  .ant-input {
+    border-radius: .02rem;
+  }
+  .has-error .ant-input:not([disabled]):hover {
+    border-color: #ff1744;
+  }
+  .has-error.has-feedback:after, .has-success.has-feedback:after, .has-warning.has-feedback:after, .is-validating.has-feedback:after {
+    width: .44rem;
+    height: .44rem;
+    display: none;
+    line-height: .44rem !important;
+    right: .18rem !important;
+  }
+  .ant-form-item:last-child {
+    margin-top: .04rem;
+    margin-bottom: .16rem;
+  }
+  .ant-form-item:nth-child(2) {
+    .has-success.has-feedback:after {
+      display: none;
+    }
+  }
+
+  .ant-form-item-control {
+    // 错误警告标签
+    .ant-form-explain {
+      margin-left: .16rem;
+    }
+  }
+  .ant-form-item, .ant-form-horizontal {
+    position: relative;
+    .ant-input:focus {
+      box-shadow: none;
+      border: 1px solid #9d9da3;
+    }
+  }
+  .code-explain {
+    border-color: #ff1744;
+    box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+  }
+}
+
+//重写弹窗message样式
+.ant-message {
+  color: #fff;
+  font-size: .17rem;
+  font-weight: 200;
+  line-height: .64rem;
+  text-align: center;
+  top: 2rem !important;
+  .ant-message-notice-content {
+    width: 2.18rem;
+    height: .64rem;
+    padding: 0;
+    border-radius: .05rem;
+    border: none;
+    box-shadow: none;
+    background: rgba(0,0,0,.6);
+  }
+  .anticon {
+    display: none;
+  }
+}
+.signup-popups {
+  margin: .4rem auto;
+  border-radius: .03rem;
+  .ant-modal{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    top: 0;
+  }
+  .ant-modal-content {
+    height: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+  .ant-modal-body {
+    height: 100%;
+    overflow-y: auto;
+    h3 {
+      font-size: .2rem;
+      padding-bottom: .1rem;
+      text-align: center;
+    }
+    dl {
+      overflow: hidden;
+      margin-top: .20rem;
+      dt {
+        border-left: 1px solid #28A4B0;
+  			color: #3a3a48;
+  			font-size: .16rem;
+  			font-weight: 400;
+  			padding-left: .04rem;
+  			height: .16rem;
+  			line-height: .16rem;
+      }
+      dd {
+        margin-right: .12rem;
+        float: left;
+        margin-top: .10rem;
+      }
+      .not-have {
+        color: #C0C0C8;
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-close {
+    width: .5rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    border-radius: 50%;
+    border: 1px solid #D9D9DE;
+    background: #fff;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -.25rem;
+  }
+  .ant-modal-close-x {
+    width: 100%;
+    height: auto;
+  }
+}

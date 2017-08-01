@@ -1,0 +1,10 @@
+.DS_STORE
+*.log
+node_modules
+dist
+coverage
+misc.xml
+modules.xml
+vcs.xml
+ca_node_modules.xml
+src/config.js

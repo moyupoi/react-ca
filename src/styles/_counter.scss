@@ -1,0 +1,76 @@
+// 入住人数框
+.filter-guest-box{
+  width: 3.43rem;
+  height: 0.5rem;
+  border: #D9D9DE solid 1px;
+  background: #fff;
+  border-radius: 0.02rem;
+  margin: 0.32rem auto 0;
+  padding: 0.1rem 0;
+  .guest-minus{
+    text-align: center;
+    width: 0.5rem;
+    height: 0.2rem;
+    margin-top: 0.05rem;
+    display: inline-block;
+    line-height: 0.2rem;
+    float: left;
+    background: url(../routes/Search/assets/minus.png) no-repeat center center;
+    background-size: contain;
+  }
+  .ant-input{
+    display: none;
+    width: 2.37rem;
+    border: none;
+    border-right: #D9D9DE solid 1px;
+    border-left: #D9D9DE solid 1px;
+    height: 0.3rem;
+    line-height: 0;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #3A3A48;
+    font-size: 0.14rem;
+    border-radius: 0;
+    text-align: center;
+  }
+  .ant-input[disabled]{
+    background: #fff;
+  }
+  .guest-label {
+    display: inline-block;
+    width: 2.37rem;
+    border: none;
+    border-right: #D9D9DE solid 1px;
+    border-left: #D9D9DE solid 1px;
+    height: 0.3rem;
+    line-height: 0;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #3A3A48;
+    font-size: 0.14rem;
+    border-radius: 0;
+    text-align: center;
+    background: #fff;
+  }
+  .guest-addition{
+    display: inline-block;
+    height: 0.2rem;
+    float: right;
+    text-align: center;
+    width: 0.52rem;
+    line-height: 0.2rem;
+    float: right;
+    margin-top: 0.05rem;
+    background: url(../routes/Search/assets/addition.png) no-repeat center center;
+    background-size: contain;
+  }
+  // preform 页面 counter 显示问题
+  .preform-guest-item-control {
+    .ant-input {
+      display: inline-block;
+    }
+  }
+}
+.booking-filter-guest-box {
+  margin: 0 auto;
+}

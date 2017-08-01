@@ -1,0 +1,60 @@
+/* 订单详情 */
+.remark-default{
+  margin-top: .12rem;
+  overflow: hidden;
+}
+.remark-hidden{
+  height: .3rem;
+}
+.remark-show{
+  height: auto;
+}
+
+//优惠券弹窗
+.booking-popups {
+  margin: 0;
+  border-radius: 0;
+  .ant-modal {
+    height: auto !important;
+    background: #F6F6F7;
+    padding: 0;
+    position: fixed;
+    top: .32rem;
+    bottom: .36rem;
+    left: .12rem;
+    right: .12rem;
+  }
+  .ant-modal-content {
+    height: 100%;
+    background: none;
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+  .ant-modal-close {
+    width: .5rem;
+    height: .5rem;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAABLtJREFUaAXdWktv00AQ3jjpS0lKoKVSVaIqqByRuHIjiAMSotzgQn8D3OHKnd8ACKknHhVqD2kLXDiARKVIcKgcl7oPKbRpQpKmaRKb+SAbOa6d+JkGIkVr79oz3+cd745nJsA8+kmSNMzY4B1VVW4IgjAWCgVj1I4Gg0IEKhoNpaQoyq96vX6gKGouEBBSjB2/SSQSR15ACLgRIsvyuXqd3ScZ18Ph8OUzZyKJwcEBSzKPj2tqoVCSyuVymu5fCYXYi3g8nnOKx5JSvXAQqNXY01gsei0ajcTp6esvsXVerzdYsViS8/ni+4EB9tAJIVtEYD6qGnwSiYRvj4+fvRQI2Lq9KzlVVdne3sF6qVReCAQaj7wyuzbFGxtbt3Z2sl/p6ZE+f3/QAV3Q2QbC7Ukms/m4UChm/YV/Ujp0Qrdb/IxEByVp8+XRUbVyUk1veqBbFH+8AxZHhOhGQRQ3v9ByqfQGsrmWWq2uEJbPjsjgKUCAufjejuCBwjpszQrs8jTNyewRAZPldwYrxWm82Gbg9f3AZrSatW0E2CeGhsKfJifPX7E1hT2+eHf351q1Wr6q3WcELQZsdhMTY31NAniBEVi12FtE4HZEIpFZcvK044bHoiixSsUTX68lP53+3jrudgCM8C6AmV/bQg3faXw8NsMHOrVTU5NsYWHJMzLLyx/ZyAg5zzZ+cJGAue0WMMvl8rL+xep0XqlU1Pn5V+rhobu9MpX6oK6vZzqpMh0jzJvaWWGSJD+gPcP0BrMBt2TckAAmYAZ2zAo3rWTIgSs+PDzMZmdvOjIzmNP0dJzNzCTarMPOSRNz8s89WHKz2Zxo9tSt9NudGbczocUE7OBAZrV9r1o9du2KWCXjJQkQAnZwEPCNbfXztNO0WzEzL8xJjwHYm3ECYUw/6PS8Exk/SHCcCHYI9MLEeIcXrREZP0kAMziEELLxgoBWBifz9u0SGx2N0sp00dXqpJVtdAwO9BfCRoNu+0AGJGR5m8ET8POH2JlAgZA2D9grhTAnzMTc3F1H+4xdHAIigHZv6na99p3gZualb6bXDw4ChTGL+gE351oSXI7fZIhDQaAY0gFX6LY1IsFl+kmGvufzmJF9rsxN24kEl+sXGYWC4vSyCykElLkyJ60VElyu12SA/U9k363T6NR3suqbaR1Eo+OW04gnRT79a6OLuvU5JcHlekEG2MGBf4+sILRv52fHnMzkujWzJuaVlnzZ5qduOv3N8ecpnw1ti5lZXExpuywdn/jUBaNMRn5GK5glAf1wEbACM58NbloMmaK9vbzIB/q9RUIImDnOFhGku0ql0hva7vlY37bAiKyWNkXXIgLUSHdls/trfcugCQwYgbUjzn81iG1I6r9IK3BmSKr0U6IHWJB84vgst7TEBpHu6gcyf0k4TL2BMciQmc2fZvYKumEdwGJ5FswuxDtzGlks6LScajMDr+/HatbPBQO2Ag9w+ZEpQkIIuRR/SjjyIjZmuyUctojwWYKT2SyqSVJRzQUKkPEhRy28WCqq2aKimtWeFNXoUYIQlTnNUX/SZZnTKpU5Pde6HHpd3c4dzYiRUJidrvDsLAX/ogieUdGPSt5qmf5UeNbIU7vvdeHZbxPJVWmVNCTKAAAAAElFTkSuQmCC) no-repeat;
+    background-size: contain;
+    border: none;
+    margin: 0 auto;
+    position: fixed;
+    top: auto !important;
+    left: 0;
+    right: 0;
+    bottom: .92rem;
+  }
+
+  .ant-modal-close-x, .ant-modal-close-x:before, .ant-modal-footer {
+    display: none;
+  }
+}
+/* 我的订单页 */
+.without-bookings{
+  min-height: 3.2rem;
+  p{
+    margin: .75rem auto;
+    font-size: .18rem;
+    text-align: center;
+  }
+}

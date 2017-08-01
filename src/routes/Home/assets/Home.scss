@@ -1,0 +1,438 @@
+@function getRem($pixel) {
+  @return $pixel/200*1rem;
+}
+@function getRemFour($top, $right, $bottom, $left) {
+  @return $top/200*1rem $right/200*1rem $bottom/200*1rem $left/200*1rem;
+}
+//省略号
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* topShow */
+.topShow{
+	padding-bottom: -45px;
+	.slickSlider {
+	  margin: 0;
+	  position: relative;
+		z-index: 1;
+		img {
+		  width: 100%;
+		  display: block;
+		}
+	}
+}
+/* searchBar */
+.searchBar{
+	width: 3.45rem;
+	height: 0.5rem;
+	box-shadow: #b2b2ba 0 0 5px;
+  margin: -0.25rem auto 0;
+	position: relative;
+	z-index: 2;
+	.searchBarInput{
+		width: 2.79rem;
+		height: 0.5rem;
+    background: #fff;
+    border: none;
+    border-radius: .02rem 0 0 .02rem;
+    float: left;
+		text-indent: 0.16rem;
+		line-height: 0.5rem;
+		color: #9d9da3;
+		font-size: 0.14rem;
+	}
+	.searchBarButton{
+		width: 0.64rem;
+		height: 0.5rem;
+		border: none;
+    border-radius: 0 .02rem .02rem 0;
+    float: left;
+		background: #3a3a48 url('../assets/iconSearch.png') no-repeat center center;
+	}
+}
+
+/* Discovers */
+.discovers{
+	padding: 0 0.12rem;
+	.discoversHeader{
+		height: 0.16rem;
+		margin-bottom: 0.12rem;
+		h3{
+			border-left: #28A4B0 solid 1px;
+			color: #3A3A48;
+			font-size: 0.16rem;
+			font-weight: normal;
+			float: left;
+			padding-left: 0.04rem;
+			height: 0.16rem;
+			line-height: 0.16rem;
+		}
+		a{
+			color: #28A4B0;
+			font-size: 14px;
+			float: right;
+		}
+	}
+	.discoversContainer{
+		width: 3.66rem;
+		overflow: hidden;
+		.discoversCard{
+			display: block;
+			border: none;
+			border-radius: 0.05rem;
+			width: 1.68rem;
+			height: 1.68rem;
+			float: left;
+			margin-right: 0.15rem;
+			margin-bottom: 0.15rem;
+			overflow: hidden;
+			position: relative;
+			.discoversCardImg{
+				width: 1.68rem;
+				height: 1.68rem;
+				img{
+					width: 1.68rem;
+					height: 1.68rem;
+				}
+			}
+			.discoversCardInfo{
+        @extend .ellipsis;
+        padding: 0 .1rem;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 1.68rem;
+				height: 0.32rem;
+				line-height: 0.32rem;
+				color: #fff;
+				font-size: 0.14rem;
+				text-align: center;
+				z-index: 2;
+				background: rgba(0,0,0,.5);
+			}
+			.discoversCardInfoBg{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 1.68rem;
+				height: 0.32rem;
+				background: #000;
+				opacity: 0.5;
+				z-index: 1;
+				border-bottom-left-radius: 0.05rem;
+				border-bottom-right-radius: 0.05rem;
+			}
+		}
+	}
+}
+/*hotRegions*/
+.hotRegions{
+	padding: 0 0.12rem;
+	.hotRegionsHeader{
+		height: 0.16rem;
+		margin-bottom: 0.12rem;
+		h3{
+			border-left: #28A4B0 solid 1px;
+			color: #3A3A48;
+			font-size: 0.16rem;
+			font-weight: normal;
+			float: left;
+			padding-left: 0.04rem;
+			height: 0.16rem;
+			line-height: 0.16rem;
+		}
+	}
+	.hotRegionsContainer{
+		width: 3.66rem;
+		overflow: hidden;
+		.hotRegionsCard{
+			width: 1.68rem;
+			height: 2rem;
+			display: block;
+			background: #fff;
+			float: left;
+			margin-right: 0.15rem;
+			margin-bottom: 0.15rem;
+			overflow: hidden;
+			box-shadow: #E6E6E9 0 1px 2px;
+			.hotRegionsCardImg{
+				width: 1.68rem;
+				height: 1.68rem;
+				img{
+					width: 1.68rem;
+					height: 1.68rem;
+				}
+			}
+			.hotRegionsCardInfo{
+				height: 0.32rem;
+				line-height: 0.32rem;
+				text-align: center;
+				color: #6B6B76;
+				font-size: 0.14rem;
+        padding: 0 .1rem;
+        @extend .ellipsis;
+			}
+		}
+	}
+}
+/*RecommondedOffers*/
+.recommond{
+	padding: 0 0.12rem;
+	.recommondHeader{
+		height: 0.16rem;
+		margin-bottom: 0.12rem;
+		h3{
+			border-left: #28A4B0 solid 1px;
+			color: #3A3A48;
+			font-size: 0.16rem;
+			font-weight: normal;
+			float: left;
+			padding-left: 0.04rem;
+			height: 0.16rem;
+			line-height: 0.16rem;
+		}
+	}
+}
+
+/*SearchHome*/
+.searchHomeContainer{
+	position:fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: auto;
+	background: #F2F2F4;
+	.searchBox{
+		height: 0.5rem;
+		background: #fff;
+		box-shadow: #B2B2BA 0 0 2px;
+		padding-top: 0.09rem;
+		.searchBoxInput{
+			width:3.1rem;
+			height: 0.32rem;
+			position: relative;
+			float: left;
+		  input{
+				width:3.1rem;
+				height: 0.32rem;
+				line-height: 0.32rem;
+				color: #9D9DA3;
+				font-size: 0.14rem;
+				text-indent: 0.12rem;
+				text-overflow: ellipsis;
+				border: none;
+			}
+			.focusClose{
+				width: 0.14rem;
+				height: 0.14rem;
+				background: url(../assets/focusClose.png) no-repeat;
+				background-size: contain;
+				position: absolute;
+				top: 0.09rem;
+				right: 0.16rem;
+			}
+		}
+		.cancel{
+			width:0.64rem;
+			height: 0.32rem;
+			line-height: 0.32rem;
+			color: #6B6B76;
+			font-size: 0.14rem;
+			text-align: center;
+			float: right;
+      border-left: #D9D9DE solid 1px;
+    }
+	}
+
+	.history{
+		background: #F6F6F7;
+		padding: 0.14rem 0;
+		border-bottom: #d9d9de solid 0.01rem;
+		margin-top: 0.02rem;
+		.historyItem{
+			display: inline-block;
+			height: 0.32rem;
+			border: #C0C0C8 solid 1px;
+			border-radius: 0.16rem;
+			margin-left: 0.16rem;
+			padding: 0 0.12rem;
+			line-height: 0.32rem;
+			color: #6B6B76;
+			margin-bottom: 0.1rem;
+		}
+	}
+	.recommond{
+		padding-left: 0.12rem;
+		.recommondHeader{
+			height: 0.32rem;
+			line-height: 0.32rem;
+			color: #9D9DA3;
+			font-size: 0.12rem;
+			margin-bottom: 0;
+		}
+		.recommondContainer{
+			padding-bottom: 0.12rem;
+			.recommondItem{
+				display: inline-block;
+				padding: 0.15rem 0.16rem;
+				color: #6B6B76;
+				font-size: 0.14rem;
+			}
+		}
+	}
+	.cityList{
+		.cityListHeader{
+			height: 0.28rem;
+			line-height: 0.28rem;
+			color: #9D9DA3;
+			font-size: 0.12rem;
+			background: #E6E6E9;
+			padding-left: 0.12rem;
+		}
+		.cityListNav{
+			padding: 0.12rem 0.09rem;
+			background: #F6F6F7;
+			.cityListNavItem{
+				width: 0.5rem;
+				height: 0.5rem;
+				line-height: 0.5rem;
+				text-align: center;
+				color: #6B6B76;
+				font-size: 0.16rem;
+				display: inline-block;
+				background: #fff;
+				margin-right: 0.01rem;
+				margin-bottom: 0.01rem;
+			}
+			.cityListNavItemInvalid{
+				width: 0.5rem;
+				height: 0.5rem;
+				line-height: 0.5rem;
+				text-align: center;
+				color: #6B6B76;
+				font-size: 0.16rem;
+				display: inline-block;
+				background: #F6F6F7;
+				margin-right: 0.01rem;
+				margin-bottom: 0.01rem;
+			}
+		}
+		.cityListItemHeader{
+			height: 0.28rem;
+			line-height: 0.28rem;
+			color: #3A3A48;
+			font-size: 0.14rem;
+			background: #E6E6E9;
+			padding-left: 0.12rem;
+			a{
+				display:block;
+				height: 0.28rem;
+				line-height: 0.28rem;
+				color: #3A3A48;
+				font-size: 0.14rem;
+				background: #E6E6E9;
+				width: 100%;
+			}
+		}
+		.cityListItemContainer{
+			padding: 0.12rem 0.09Arem;
+			background: #F6F6F7;
+			.cityItem{
+				display: inline-block;
+				font-size: 0.14rem;
+				color: #6B6B76;
+				padding: 0.15rem 0.16rem;
+			}
+		}
+	}
+}
+
+/***destinationListContainer*/
+.destinationListContainer{
+	width: 3.75rem;
+	padding: 0 0.12rem;
+	background: #fff;
+	position: absolute;
+	top: 0.52rem;
+	.destinationListItem{
+		border-bottom: #E6E6E9 solid 1px;
+		height: 0.5rem;
+		line-height: 0.5rem;
+		font-size: 0.14rem;
+		a{
+			color: #6B6B76;
+			display: block;
+			width: 100%;
+			height: 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+		}
+		&:last-child{
+			border-bottom: none;
+		}
+  }
+}
+
+.hotRegions, .discovers {
+  margin-bottom: -.15rem;
+  overflow: hidden;
+  position: relative;
+}
+.hotRegionsHeader, .discoversHeader, .recommondHeader {
+  margin-top: .24rem;
+}
+
+:global {
+  .recommond-container {
+  	width: 3.53rem;
+  	border-radius: 0.02rem;
+    .ant-tabs-bar {
+      border: 0;
+      margin: 0;
+      .ant-tabs-nav-container {
+        padding-left: 0;
+        padding-right: 0;
+        height: auto !important;
+    		.ant-tabs-tab-prev, .ant-tabs-tab-next {
+    			display: none;
+    		}
+        .ant-tabs-nav-wrap {
+          border: 1px solid #e6e6e9;
+          width: 3.34rem;
+          overflow: hidden;
+          margin: 0 auto .16rem;
+          border-radius: .04rem;
+    			.ant-tabs-nav {
+    				width: 3.36rem;
+    				.ant-tabs-tab {
+    					display: block;
+    					width: 25%;
+    					height: 0.34rem;
+    	        color: #6B6B76;
+    					float: left;
+    	        font-size: .14rem;
+    					text-align: center;
+    					background: #fff;
+              border: 0;
+              border-radius: 0;
+    					border-right: #f2f2f4 solid 1px;
+    					margin-bottom: 1px;
+              margin-right: 0;
+    				}
+    				.ant-tabs-tab-active {
+    					background: #f2f2f4;
+              .ant-tabs-tab-inner {
+                color: #09091A;
+              }
+    				}
+    			}
+        }
+      }
+    }
+  }
+}

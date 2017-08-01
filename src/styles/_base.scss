@@ -1,0 +1,274 @@
+/*
+ * Contents
+ *
+ * Body resets
+ * Custom type
+ * Messages
+ * Container
+ * Masthead
+ * Posts and pages
+ * Pagination
+ * Reverse layout
+ * Themes
+ */
+
+/*
+ * Body resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
+.gist .markdown-body {
+  padding: 15px;
+}
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+.gist .gist-file .gist-data {
+  font-size: .8rem !important;
+  line-height: 1.4;
+}
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9;
+}
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  margin: 0 auto;
+}
+
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.header {
+  height: 0.4rem;
+  background: #0d0501;
+  text-align: center;
+  position: relative;
+
+}
+.return {
+  width: 0.16rem;
+  height: 0.16rem;
+  background: url(../layouts/assets/Return.png) no-repeat;
+  margin: .14rem 0 0 .12rem;
+}
+.return-outside {
+  width: .40rem;
+  height: .40rem;
+  position: absolute;
+}
+.header-title {
+  color: #fff;
+  font-size: 0.18rem;
+  line-height: 0.4rem;
+  font-weight: normal;
+}
+.sign-up-discount {
+  color: #ffffff;
+  font-size: 0.14rem;
+  line-height: 0.4rem;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  left: .13rem;
+  &:hover {
+    color: #28A4B0;
+  }
+}
+.footer{
+  clear: both;
+  padding: 0.24rem 0;
+  background: #3A3A48;
+}
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+}
+.footer-info {
+  text-align: center;
+  margin-top: 0.16rem;
+  color: #fff;
+  font-size: 1.17em;
+}
+.loading {
+  text-align: center;
+  background: rgba(0,0,0,0.05);
+  border-radius: 4px;
+  padding: 2rem 0;
+  height: 100rem;
+}
+
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.post-title {
+  margin-top: 0;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+#LXB_CONTAINER_SHOW {
+  z-index: 999 !important;
+  width: .4rem !important;
+  height: 1.04rem !important;
+}
+#touchId {
+  width: .4rem !important;
+  height: .46rem !important;
+}

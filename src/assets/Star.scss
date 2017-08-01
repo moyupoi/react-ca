@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@function getRem($pixel) {
+  @return $pixel/200*1rem;
+}
+.star {
+  float: right;
+  i {
+    background: url('../assets/star.png') center center no-repeat;
+    background-size: getRem(270) getRem(21);
+    margin: 0 auto;
+    float: left;
+    width: getRem(135);
+    height: getRem(21);
+  }
+  .star0 {
+    background-position: getRem(-135) 0;
+  }
+  .star1 {
+    background-position: getRem(-108) 0;
+  }
+  .star2 {
+    background-position: getRem(-81) 0;
+  }
+  .star3 {
+    background-position: getRem(-54) 0;
+  }
+  .star4 {
+    background-position: getRem(-27) 0;
+  }
+  .star5 {
+    background-position: 0 0;
+  }
+}
